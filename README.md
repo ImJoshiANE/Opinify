@@ -8,6 +8,7 @@ Opinify is built using the following technologies:
 
 - Next.js 13
 - React.js
+- Typescript
 - Tailwind CSS
 - Prisma
 - Redis
