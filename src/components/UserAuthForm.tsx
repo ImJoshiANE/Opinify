@@ -7,7 +7,6 @@ import { FC } from "react";
 import { Button } from "@/components/ui/Button";
 import { useToast } from "@/hooks/use-toast";
 import { Icons } from "./Icons";
-import { error } from "console";
 
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -18,7 +17,7 @@ const UserAuthForm: FC<UserAuthFormProps> = ({ className, ...props }) => {
   const loginWithGoogle = async () => {
     setIsLoading(true);
     try {
-      throw new Error();
+      // throw new Error();
       await signIn("google");
     } catch (error) {
       toast({
