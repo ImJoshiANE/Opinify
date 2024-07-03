@@ -10,7 +10,6 @@ const page: FC = () => {
           <div className="absolute top-4 right-4">
             <CloseModal />
           </div>
-
           <SignIn />
         </div>
       </div>
