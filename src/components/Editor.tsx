@@ -105,12 +105,16 @@ export const Editor: React.FC<EditorProps> = ({ spaceId }) => {
               uploader: {
                 async uploadByFile(file: File) {
                   // upload to uploadthing
-                  const [res] = await uploadFiles([file], 'imageUploader')
+                   const files = [file];
+
+                  const res = await uploadFiles("imageUploader", {
+                    files,
+                  });
 
                   return {
                     success: 1,
                     file: {
-                      url: res.fileUrl,
+                      url: res[0]?.url,
                     },
                   }
                 },

@@ -1,7 +1,7 @@
 import { getAuthSession } from '@/lib/auth'
 import { db } from '@/lib/db'
 import { Comment, CommentVote, User } from '@prisma/client'
-// import CreateComment from './CreateComment'
+import CreateComment from './CreateComment'
 import PostComment from './comments/PostComment'
 
 type ExtendedComment = Comment & {
@@ -45,7 +45,7 @@ const CommentsSection = async ({ postId }: CommentsSectionProps) => {
     <div className='flex flex-col gap-y-4 mt-4'>
       <hr className='w-full h-px my-6' />
 
-      {/* <CreateComment postId={postId} /> */}
+      <CreateComment postId={postId} />
 
       <div className='flex flex-col gap-y-6 mt-4'>
         {comments
