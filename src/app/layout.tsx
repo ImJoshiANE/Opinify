@@ -9,8 +9,8 @@ import '@/styles/globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Breadit',
-  description: 'A Reddit clone built with Next.js and TypeScript.',
+  title: 'Opinify',
+  description: 'Opinify is a social media app where users can create and share posts.',
 }
 
 export default function RootLayout({
