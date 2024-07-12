@@ -71,7 +71,7 @@ const Page = () => {
         <div>
           <p className='text-lg font-medium'>Name</p>
           <p className='text-xs pb-2'>
-            Community names including capitalization cannot be changed. Should not contain spaces or special characters except '-' and '_'. Community name must be between 3 and 21 characters.
+            {`Community names including capitalization cannot be changed. Should not contain spaces or special characters except '-' and '_'. Community name must be between 3 and 21 characters.`}
           </p>
           <div className='relative'>
             <p className='absolute text-sm left-0 w-8 inset-y-0 grid place-items-center text-zinc-400'>
