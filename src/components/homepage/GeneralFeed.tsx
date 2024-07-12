@@ -13,7 +13,7 @@ const GeneralFeed = async () => {
       comments: true,
       space: true,
     },
-    take: INFINITE_SCROLL_PAGINATION_RESULTS, // 4 to demonstrate infinite scroll, should be higher in production
+    take: INFINITE_SCROLL_PAGINATION_RESULTS, // 5 to demonstrate infinite scroll, should be higher in production
   })
 
   return <PostFeed initialPosts={posts} />
